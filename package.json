@@ -1,0 +1,34 @@
+{
+  "name": "rakkii",
+  "description": "Rakkii is a VSCode Theme for TheRakkii.",
+  "publisher": "luisaraujoc",
+  "dysplayName": "Rakkii",
+  "keywords": ["rakkii", "theme", "Sunbleed", "TheRakkii"],
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "icon": "assets/icon.jpg",
+  "license": "MIT",
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Rakkii",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rakkii-theme-color-theme.json"
+      },
+      {
+        "label": "Sunbleed",
+        "uiTheme": "vs",
+        "path": "./themes/sunbleed-fork-color-theme.json"
+      }
+    ]},
+    "scripts": {
+      "package": "vsce package --no-yarn",
+      "publish": "vsce publish --no-yarn"
+    }
+}
